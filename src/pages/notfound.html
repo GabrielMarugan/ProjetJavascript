@@ -5,21 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>NOTFOUND</title>
     <link rel="stylesheet" href="./assets/style/main.css">
+
 </head>
 
 <body>
     <main>
         <header>
             <h1>
-                Acceuil
+                404 NOT FOUND
             </h1>
         </header>
     </main>
-
-    <a href="./persos.html">Liste</a>
+    <p> </p>
+    <a href="./persos.html">Liste des personnages</a>
 
 </body>
-
+<script>
+    let errorMsg = document.querySelector('p');
+    errorMsg.innerHTML = "Ce personnage n'existe pas !\n vous allez être redirigé vers la liste des personnages";
+    setTimeout(() => {window.location = "/persos.html"}, 5000);
+</script>
 </html>

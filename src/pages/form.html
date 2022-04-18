@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="../assets/style/main.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            
+        </header>
+
+            <form id="form" name="form">
+                <h1></h1>
+                <label>nom : <input id="InpName" type="text" name="name" required></label><br/>
+                
+                
+                <label>rareté : </label>        
+                <div class="rating"> 
+                    <input type="radio" name="rarity" value="5" id="rarity5"><label for="rarity5">☆</label> 
+                    <input type="radio" name="rarity" value="4" id="rarity4"><label for="rarity4">☆</label> 
+                    <input type="radio" name="rarity" value="3" id="rarity3"><label for="rarity3">☆</label> 
+                    <input type="radio" name="rarity" value="2" id="rarity2"><label for="rarity2">☆</label> 
+                    <input type="radio" name="rarity" value="1" id="rarity1"><label for="rarity1">☆</label>
+                      
+                </div>
+                <div>
+                    <input id="Anemo" type="radio" value="Anemo" name="element" required>
+                    <label for="Anemo">Anémo</label>
+                    <input id="Pyro" type="radio" value="Pyro" name="element">
+                    <label for="Pyro">Pyro</label>
+                    <input id="Electro" type="radio" value="Electro" name="element">
+                    <label for="Electro">Électro</label>
+                    <input id="Cryo" type="radio" value="Cryo" name="element">
+                    <label for="Cryo">Cryo</label>
+                    <input id="Geo" type="radio" value="Geo" name="element">
+                    <label for="Geo">Géo</label>
+                    <input id="Hydro" type="radio" value="Hydro" name="element">
+                    <label for="Hydro">Hydro</label>
+                </div>  
+
+                <div>
+                    <input id="Sword" type="radio" value="Sword" name="weapon" required>
+                    <label for="Sword">Épée</label>
+                    <input id="Claymore" type="radio" value="Claymore" name="weapon">
+                    <label for="Claymore">Claymore</label>
+                    <input id="Polearm" type="radio" value="Polearm" name="weapon">
+                    <label for="Polearm">Lance</label>
+                    <input id="Bow" type="radio" value="Bow" name="weapon">
+                    <label for="Bow">Arc</label>
+                    <input id="Catalyst" type="radio" value="Catalyst" name="weapon">
+                    <label for="Catalyst">Catalyseur</label>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>stat</tr>
+                        <tr>Niv 1</tr>
+                        <tr>Niv 90</tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ATQ</td>
+                            <td><input id="InpStatLvlMinAtq" type="number" name="statLvlMin.atq"></td>
+                            <td><input id="InpStatLvlMaxAtq" type="number" name="statLvlMax.atq"></td>
+                        </tr>
+                        <tr>
+                            <td>DEF</td>
+                            <td><input id="InpStatLvlMinDef" type="number" name="statLvlMin.def"></td>
+                            <td><input id="InpStatLvlMaxDef" type="number" name="statLvlMax.def"></td>
+                        </tr>
+                        <tr>
+                            <td>PV</td>
+                            <td><input id="InpStatLvlMinPv" type="number" name="statLvlMin.pv"></td>
+                            <td><input id="InpStatLvlMaxPv" type="number" name="statLvlMax.pv"></td>
+                        </tr>
+
+                        
+                    </tbody>
+
+                </table>
+                <label>date de sortie: <input id="InpReleaseDate" type="date" name="releaseDate" required></label><br/>
+
+                <button id="btnSubmit" ></button>
+
+            </form>
+
+    </main>
+    <script type="module" src="../assets/script/form.js"></script>
+</body>
+
+</html>
